@@ -1,0 +1,26 @@
+In Nimbus framework is using MongoDB with Spring Data.
+
+Integrated with Lister class 
+we have a handle class  DefaultMongoModelPersistenceHandler
+
+
+JavaBeanHandler
+It is used to map the properties to Bean while persisting the data.
+
+CURD operation is defined in the Repository class  DefaultMongoModelRepository
+
+MongoDB configuration is done using @Configuration annotations
+
+
+MongoIdSequenceRepositoryclass used to generate the seq 
+
+The search query is defined in the class
+MongoSearchByExample
+
+ParamStateAtomicPersistenceEventListener
+
+ this listener is used to track the task when doing the curd operation 
+
+ParamStateBulkPersistenceEventListener
+this listener is used to track the task when doing the bulk operation  
+
